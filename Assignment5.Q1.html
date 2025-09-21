@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=window.prompt("Enter First Positive Number:");
+    while(isNaN(a) || a<=0 || !Number.isInteger(Number(a)))
+    {
+        window.alert("Invalid! Enter positive Number.");
+        a=window.Prompt("Enter First Positive Number:");
+    }
+    let b=window.prompt("Enter Seconds Positive Number:");
+    while(isNaN(b) || b<=0 || !Number.isInteger(Number(b)))
+    {
+        window.alert("Invalid! Enter Positive Number.");
+        b=window.Prompt("Enter Seconds Positive Number:");
+    }
+    let c=window.prompt("Enter Third Positive Number:");
+    while(isNaN(c) || c<=0 || !Number.isInteger(Number(c)))
+    {
+        window.alert("Invalid! Enter positive Number.");
+        c=window.Prompt("Enter Third Positive Number:");
+    }
+    a=Number(a);
+    b=Number(b);
+    c=Number(c);
+
+    let largest;
+    if(a>=b && a>=c){
+    largest=a;}
+    else if(b>=a && b>=c){
+    largest=b;}
+    else{
+    largest=c;}
+    window.alert("Max Number:"+ largest);
+    </script>
+</body>
+</html> 
+
+    
+

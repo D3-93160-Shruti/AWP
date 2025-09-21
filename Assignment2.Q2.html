@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+</head>
+<body>
+    <div>
+        <table border="5">
+            <tbody>
+                <tr>
+                    <td colspan="5"><center>A</center></td>
+                </tr>
+                <div>
+                    <tr>
+                    <td rowspan="2" colspan="3"><center>B</center></td>
+                    <td colspan="2"><center>C</center></td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>E</td>
+                </tr>
+                </div>
+                <div>
+                    <tr >
+                        <td rowspan="3">F</td>
+                        <td colspan="4"><center>G</center></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">H</td>
+                        <td rowspan="2">I</td>
+                        <td colspan="2"><center>J</center></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><center>K</center></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td colspan="4" rowspan="2"><center>L</center></td>
+                        <td>M</td>
+                    </tr>
+                    <tr>
+                        <td>N</td>
+                    </tr>
+                </div>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
